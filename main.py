@@ -17,3 +17,6 @@ rank2_tensor = tf.Variable([["rank", "one"],["rank", "two"]], tf.string)
 
 print("checking rank")
 print(tf.rank(rank2_tensor))
+
+print("checking shape")
+print(tf.shape(rank2_tensor))
