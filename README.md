@@ -10,3 +10,7 @@ deep learning, machine learning
 ```bash
 pipenv lock -r
 ```
+
+## TensorFlow 2.0 Tutorial
+This repostory goes over the tutorial found at 
+https://www.youtube.com/watch?v=tPYj3fFJGjk
