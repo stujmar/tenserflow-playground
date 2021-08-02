@@ -20,3 +20,10 @@ print(tf.rank(rank2_tensor))
 
 print("checking shape")
 print(tf.shape(rank2_tensor))
+
+t = tf.zeros([5,5,5,5])
+print(tf.shape(t))
+# print(t)
+
+my_tensor = tf.ones([5,5,5,5])
+print(my_tensor)
