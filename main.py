@@ -26,4 +26,7 @@ print(tf.shape(t))
 # print(t)
 
 my_tensor = tf.ones([5,5,5,5])
-print(my_tensor)
+# print(my_tensor)
+reshaped = tf.reshape(t, [625])
+print(reshaped)
+print(tf.reshape(reshaped, [125, -1]))
