@@ -11,6 +11,11 @@ deep learning, machine learning
 pipenv lock -r
 ```
 
+>adding a dependency
+```bash
+pipenv install dependency_name
+```
+
 ## TensorFlow 2.0 Tutorial
 This repostory goes over the tutorial found at 
 https://www.youtube.com/watch?v=tPYj3fFJGjk

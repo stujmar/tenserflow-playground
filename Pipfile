@@ -7,6 +7,8 @@ name = "pypi"
 requests = "*"
 pillow = "*"
 tensorflow = "*"
+matplotlib = "*"
+numpy = "*"
 
 [dev-packages]
 pytest = "*"

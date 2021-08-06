@@ -2,10 +2,15 @@ import os
 import tensorflow as tf
 import cProfile
 
-# Linear Regression
+import matplotlib.pyplot
+import numpy as np
 
-# Classification
+# Algorithm Types
 
-# Clustering
+## Linear Regression
 
-# Hidden Markov Models
+## Classification
+
+## Clustering
+
+## Hidden Markov Models
