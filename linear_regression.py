@@ -16,31 +16,15 @@ from IPython.display import clear_output
 # six.moves is a library that lets us import code from other libraries.
 from six.moves import urllib
 
+# Import feature column.
 import tensorflow.compat.v2.feature_column as fc
 # tensorflow is a machine learning library.
 import tensorflow as tf
 
-# Line of best fit. 
-# Line through a scatter plot that best predicts future data points.
+# Load dataset.
+dftrain = pd.read_csv('https://storage.googleapis.com/tf-datasets/titanic/train.csv') # training data
+dfeval = pd.read_csv('https://storage.googleapis.com/tf-datasets/titanic/eval.csv') # testing data
+y_train = dftrain.pop('survived')
+y_eval = dfeval.pop('survived')
 
-# Equation for a line is y=mx+b, where b is the y-intercept and m is the slope.
-# Slope is the change in y over change in x, or 'rise' over 'run'.
-
-# function to return y value of a line.
-def line_y(x, m, b):
-    return m*x + b
-
-# function to return x value of a line.
-def line_x(y, m, b):
-    return (y-b)/m
-
-# Equation to calucate area of a cylinder.
-# pi*r^2*h, where r is radius, h is height.
-
-# function to return area of a cylinder.
-def cylinder_area(r, h):
-    return np.pi*r**2*h
-
-# area of a cylinder from diameter.
-def cylinder_area_from_diameter(d, h):
-    return np.pi*(d/2)**2*h
+# The quick brown fox jumps over the lazy dog.
