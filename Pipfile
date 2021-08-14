@@ -9,6 +9,7 @@ pillow = "*"
 tensorflow = "*"
 matplotlib = "*"
 numpy = "*"
+tweepy = "*"
 
 [dev-packages]
 pytest = "*"
