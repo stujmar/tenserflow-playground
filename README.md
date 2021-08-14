@@ -16,6 +16,11 @@ pipenv lock -r
 pipenv install dependency_name
 ```
 
+>running a file
+```bash
+pipenv run test_print.py
+```
+
 ## TensorFlow 2.0 Tutorial
 This repostory goes over the tutorial found at 
 https://www.youtube.com/watch?v=tPYj3fFJGjk
