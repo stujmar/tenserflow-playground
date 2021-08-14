@@ -28,3 +28,6 @@ y_train = dftrain.pop('survived')
 y_eval = dfeval.pop('survived')
 
 # The quick brown fox jumps over the lazy dog.
+
+for row in dftrain:
+    print(row)
