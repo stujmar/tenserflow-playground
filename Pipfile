@@ -12,6 +12,7 @@ numpy = "*"
 tweepy = "*"
 sklearn = "*"
 pandas = "*"
+ipython = "*"
 
 [dev-packages]
 pytest = "*"
