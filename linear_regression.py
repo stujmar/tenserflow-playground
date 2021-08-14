@@ -1,3 +1,14 @@
+from __future__ import absolute_import, division, print_function, unicode_literals
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+from IPython.display import clear_output
+from six.moves import urllib
+
+import tensorflow.compat.v2.feature_column as fc
+import tensorflow as tf
+
 # Line of best fit. 
 # Line through a scatter plot that best predicts future data points.
 
@@ -11,6 +22,3 @@ def line_y(x, m, b):
 # function to return x value of a line.
 def line_x(y, m, b):
     return (y-b)/m
-
-
-
