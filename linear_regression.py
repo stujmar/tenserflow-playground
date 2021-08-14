@@ -31,3 +31,5 @@ y_eval = dfeval.pop('survived')
 
 for row in dftrain:
     print(row)
+    for data in row:
+        print(data)
