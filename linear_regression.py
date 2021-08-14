@@ -29,7 +29,11 @@ y_eval = dfeval.pop('survived')
 
 # The quick brown fox jumps over the lazy dog.
 
-for row in dftrain:
-    print(row)
-    for data in row:
-        print(data)
+# Import Pokemon data into a dataframe.
+poke_df = pd.read_csv('./data/pokemon_data.csv')
+poke_df_xlsx = pd.read_excel('./data/pokemon_data.xlsx')
+
+print(poke_df.head(3))
+print(poke_df.tail(3))
+
+# the equation of a line is y = mx + b, where m is the slope and b is the y-intercept.
