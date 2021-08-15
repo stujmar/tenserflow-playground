@@ -33,7 +33,9 @@ y_eval = dfeval.pop('survived')
 poke_df = pd.read_csv('./data/pokemon_data.csv')
 poke_df_xlsx = pd.read_excel('./data/pokemon_data.xlsx')
 
-print(poke_df.head(3))
-print(poke_df.tail(3))
+# print(poke_df.head(3))
+# print(poke_df.tail(3))
+
+print(poke_df_xlsx)
 
 # the equation of a line is y = mx + b, where m is the slope and b is the y-intercept.
