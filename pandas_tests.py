@@ -47,7 +47,11 @@ def print_range(start, end):
 def print_two_attributes(attribute1, attribute2):
     print(poke_df[[attribute1, attribute2]])    
 
-print_two_attributes("Name", "HP")
+# print a list of attributes of each pokemon.
+def print_n_attributes(n, list_of_attributes):
+    print(poke_df[list_of_attributes].iloc[0:n])
+
+print_n_attributes(5, ['Name', 'Attack', 'Defense', 'Legendary'])
 
 
 # print(poke_df_xlsx)
