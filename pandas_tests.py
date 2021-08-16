@@ -29,4 +29,13 @@ poke_delimited = pd.read_csv('./data/pokemon_data.csv', delimiter='\t')
 # Print the column headers of the dataframe.
 print(poke_df.columns)
 
+# Read individual column of the dataframe.
+# print(poke_df['Name'])
+
+# print name and id of each pokemon. in poke_df.
+for index, row in poke_df.iterrows():
+    print(row['Name'], 'is number', row['#'])
+
+
+
 # print(poke_df_xlsx)
