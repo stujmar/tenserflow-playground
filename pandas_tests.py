@@ -27,14 +27,17 @@ poke_delimited = pd.read_csv('./data/pokemon_data.csv', delimiter='\t')
 # print(poke_delimited.head(5))
 
 # Print the column headers of the dataframe.
-print(poke_df.columns)
+def print_column_headers():
+    print(poke_df.columns)
 
 # Read individual column of the dataframe.
-# print(poke_df['Name'])
+def print_names():
+    print(poke_df['Name'])
 
 # print name and id of each pokemon. in poke_df.
-for index, row in poke_df.iterrows():
-    print(row['Name'], 'is number', row['#'])
+def print_name_and_id():
+    for row in poke_df.iterrows():
+        print(row['Name'], 'is number', row['#'])
 
 
 
