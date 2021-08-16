@@ -39,11 +39,15 @@ def print_name_and_id():
     for row in poke_df.iterrows():
         print(row['Name'], 'is number', row['#'])
 
+# print a range of rows, inclusive of start and end numbers.
 def print_range(start, end):
     print(poke_df.iloc[start:(end + 1)])
 
-print_range(5, 10)
+# compare two attributes of each pokemon.
+def print_two_attributes(attribute1, attribute2):
+    print(poke_df[[attribute1, attribute2]])    
 
+print_two_attributes("Name", "HP")
 
 
 # print(poke_df_xlsx)
