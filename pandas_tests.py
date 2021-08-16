@@ -39,6 +39,12 @@ def print_name_and_id():
     for row in poke_df.iterrows():
         print(row['Name'], 'is number', row['#'])
 
+def print_range(start, end):
+    end = end + 1
+    print(poke_df.iloc[start:end])
+
+print_range(5, 10)
+
 
 
 # print(poke_df_xlsx)
