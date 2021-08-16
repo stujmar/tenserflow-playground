@@ -24,6 +24,9 @@ poke_df_xlsx = pd.read_excel('./data/pokemon_data.xlsx')
 
 # Adding a delimiter, but it breaks the print formatting.
 poke_delimited = pd.read_csv('./data/pokemon_data.csv', delimiter='\t')
-print(poke_delimited.head(5))
+# print(poke_delimited.head(5))
+
+# Print the column headers of the dataframe.
+print(poke_df.columns)
 
 # print(poke_df_xlsx)
