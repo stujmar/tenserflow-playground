@@ -19,7 +19,11 @@ y_eval = dfeval.pop('survived')
 poke_df = pd.read_csv('./data/pokemon_data.csv')
 poke_df_xlsx = pd.read_excel('./data/pokemon_data.xlsx')
 
-print(poke_df.head(3))
-print(poke_df.tail(3))
+# print(poke_df.head(3))
+# print(poke_df.tail(3))
+
+# Adding a delimiter, but it breaks the print formatting.
+poke_delimited = pd.read_csv('./data/pokemon_data.csv', delimiter='\t')
+print(poke_delimited.head(5))
 
 # print(poke_df_xlsx)
