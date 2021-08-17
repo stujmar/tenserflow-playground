@@ -51,7 +51,13 @@ def print_two_attributes(attribute1, attribute2):
 def print_n_attributes(n, list_of_attributes):
     print(poke_df[list_of_attributes].iloc[0:n])
 
-print_n_attributes(5, ['Name', 'Attack', 'Defense', 'Legendary'])
+# print_n_attributes(5, ['Name', 'Attack', 'Defense', 'Legendary'])
 
+# get any data out of each row of the dataframe.
+def print_any_data(): 
+    for index, row in poke_df.iterrows():
+        print(row['Name'], 'is number', row['#'], 'and has', row['Type 1'], 'type')
+
+print_any_data()
 
 # print(poke_df_xlsx)
