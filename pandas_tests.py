@@ -87,3 +87,9 @@ def sort_by_attribute(attribute):
 def sort_by_two_attributes(attribute1, attribute2):
     print(poke_df.sort_values([attribute1, attribute2], ascending=[True, False]))
 # sort_by_two_attributes('Type 1', 'Attack')
+
+# add_stats() adds a new column to the dataframe.
+def add_stats():
+    poke_df['Total'] = poke_df['HP'] + poke_df['Attack'] + poke_df['Defense'] + poke_df['Sp. Atk'] + poke_df['Sp. Def'] + poke_df['Speed']
+add_stats()
+
