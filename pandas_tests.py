@@ -58,6 +58,12 @@ def print_any_data():
     for index, row in poke_df.iterrows():
         print(row['Name'], 'is number', row['#'], 'and has', row['Type 1'], 'type')
 
-print_any_data()
+# print_any_data()
+
+# print a pokemon of a given Name.
+def print_pokemon_by_name(name):
+    print(poke_df[poke_df['Name'] == name])
+
+print_pokemon_by_name('Bulbasaur')
 
 # print(poke_df_xlsx)
