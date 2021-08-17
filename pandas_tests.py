@@ -101,4 +101,11 @@ def get_pokemon_with_highest_total():
 # get pokemon with the lowest total.
 def get_pokemon_with_lowest_total():
     print(poke_df.sort_values('Total', ascending=True).head(10))
-get_pokemon_with_lowest_total()
+# get_pokemon_with_lowest_total()
+
+# drop a column from the dataframe.
+def drop_column(column):
+    poke_df = poke_df.drop(columns=[column])
+print('dropping Totat')
+drop_column('Total')
+print(poke_df.head(5))
