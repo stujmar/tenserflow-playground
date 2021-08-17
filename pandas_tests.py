@@ -62,8 +62,15 @@ def print_any_data():
 
 # print a pokemon of a given Name.
 def print_pokemon_by_name(name):
+    # I don't 100% understand this, but it works.
     print(poke_df[poke_df['Name'] == name])
 
-print_pokemon_by_name('Bulbasaur')
+# print_pokemon_by_name('Bulbasaur')
+
+# finding information about a pokemon.
+def access_rows_by_attribute(attribute, value):
+    print(poke_df.loc[poke_df[attribute] == value])
+
+access_rows_by_attribute('Type 1', 'Grass')
 
 # print(poke_df_xlsx)
