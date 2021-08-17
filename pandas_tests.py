@@ -71,6 +71,9 @@ def print_pokemon_by_name(name):
 def access_rows_by_attribute(attribute, value):
     print(poke_df.loc[poke_df[attribute] == value])
 
-access_rows_by_attribute('Type 1', 'Grass')
+# access_rows_by_attribute('Type 1', 'Grass')
 
-# print(poke_df_xlsx)
+# Describe the data.
+def describe_data():
+    print(poke_df.describe())   
+# describe_data()
