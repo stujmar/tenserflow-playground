@@ -81,4 +81,9 @@ def describe_data():
 # sort values by HP and print the dataframe.
 def sort_by_attribute(attribute):
     print(poke_df.sort_values(attribute, ascending=False))
-sort_by_attribute('HP')
+# sort_by_attribute('HP')
+
+# sort by two values and print the dataframe.
+def sort_by_two_attributes(attribute1, attribute2):
+    print(poke_df.sort_values([attribute1, attribute2], ascending=[True, False]))
+# sort_by_two_attributes('Type 1', 'Attack')
