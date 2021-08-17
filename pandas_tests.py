@@ -96,4 +96,9 @@ add_stats()
 # get pokemon with the highest total.
 def get_pokemon_with_highest_total():
     print(poke_df.sort_values('Total', ascending=False).head(10))
-get_pokemon_with_highest_total()
+# get_pokemon_with_highest_total()
+
+# get pokemon with the lowest total.
+def get_pokemon_with_lowest_total():
+    print(poke_df.sort_values('Total', ascending=True).head(10))
+get_pokemon_with_lowest_total()
