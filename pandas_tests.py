@@ -93,3 +93,7 @@ def add_stats():
     poke_df['Total'] = poke_df['HP'] + poke_df['Attack'] + poke_df['Defense'] + poke_df['Sp. Atk'] + poke_df['Sp. Def'] + poke_df['Speed']
 add_stats()
 
+# get pokemon with the highest total.
+def get_pokemon_with_highest_total():
+    print(poke_df.sort_values('Total', ascending=False).head(10))
+get_pokemon_with_highest_total()
