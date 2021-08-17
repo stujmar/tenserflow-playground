@@ -77,3 +77,8 @@ def access_rows_by_attribute(attribute, value):
 def describe_data():
     print(poke_df.describe())   
 # describe_data()
+
+# sort values by HP and print the dataframe.
+def sort_by_attribute(attribute):
+    print(poke_df.sort_values(attribute, ascending=False))
+sort_by_attribute('HP')
