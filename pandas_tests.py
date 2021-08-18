@@ -138,3 +138,9 @@ def save_dataframe_to_txt(dataframe, filename):
 def print_pokemon_by_type(type, dataframe):
     print(dataframe[dataframe['Type 1'] == type])
 # print_pokemon_by_type('Grass', poke_df)
+
+# print all pokemon of a given Type 1 and Type 2.
+def print_pokemon_by_type_and_type2(type1, type2, dataframe):
+    # & = and, | = or.
+    print(dataframe[(dataframe['Type 1'] == type1) & (dataframe['Type 2'] == type2)])
+# print_pokemon_by_type_and_type2('Grass', 'Flying', poke_df)
