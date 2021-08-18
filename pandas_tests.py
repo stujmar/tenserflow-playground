@@ -150,3 +150,8 @@ def print_pokemon_by_hp_greater_than_100(dataframe):
     print(dataframe[dataframe['HP'] > 100].sort_values('HP', ascending=False))
 # print_pokemon_by_hp_greater_than_100(poke_df)
 
+# reset the index of the dataframe.
+def reset_index(dataframe):
+    # look up drop and inplace in the documentation.
+    dataframe.reset_index(drop=True, inplace=True)
+# reset_index(poke_df)
