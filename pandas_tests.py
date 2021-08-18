@@ -134,4 +134,7 @@ def save_dataframe_to_txt(dataframe, filename):
     dataframe.to_csv(filename, index=False, sep='\t')
 # save_dataframe_to_txt(poke_df, './data/pokemon_data_sorted.txt')
 
-print(poke_df.head(5))
+# print all pokemon of a given type.
+def print_pokemon_by_type(type, dataframe):
+    print(dataframe[dataframe['Type 1'] == type])
+# print_pokemon_by_type('Grass', poke_df)
