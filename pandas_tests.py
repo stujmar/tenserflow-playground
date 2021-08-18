@@ -104,8 +104,13 @@ def get_pokemon_with_lowest_total():
 # get_pokemon_with_lowest_total()
 
 # drop a column from the dataframe.
-def drop_column(column):
-    poke_df = poke_df.drop(columns=[column])
-print('dropping Totat')
-drop_column('Total')
+def drop_column(column, dataframe):
+    dataframe = dataframe.drop(columns=[column], axis=1, inplace=True)
+# print('dropping Totat')
+# drop_column('Total')
+# print(poke_df.head(5))
+
+poke_df['Grand Total'] = poke_df.iloc[:, 4:10].sum(axis=1)
+print(poke_df.head(5))
+drop_column('Grand Total', poke_df)
 print(poke_df.head(5))
