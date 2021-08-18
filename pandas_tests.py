@@ -114,8 +114,14 @@ drop_column('Grand Total', poke_df)
 # rearrange columns.
 def rearrange_columns(dataframe):
     cols = list(dataframe.columns)
+    # careful hard coding, this is not a good way to do this.
     return dataframe[cols[0:4] + [cols[-1]]+cols[4:12]]
 
 poke_df = rearrange_columns(poke_df)
+
+# save the dataframe to a csv file.
+def save_dataframe_to_csv(dataframe, filename):
+    dataframe.to_csv(filename, index=False)
+# save_dataframe_to_csv(poke_df, './data/pokemon_data_sorted.csv')
 
 print(poke_df.head(5))
