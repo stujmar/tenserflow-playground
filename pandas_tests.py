@@ -129,4 +129,9 @@ def save_dataframe_to_excel(dataframe, filename):
     dataframe.to_excel(filename, index=False)
 # save_dataframe_to_excel(poke_df, './data/pokemon_data_sorted.xlsx')
 
+# save as a txt file.
+def save_dataframe_to_txt(dataframe, filename):
+    dataframe.to_csv(filename, index=False, sep='\t')
+# save_dataframe_to_txt(poke_df, './data/pokemon_data_sorted.txt')
+
 print(poke_df.head(5))
