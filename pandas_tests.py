@@ -144,3 +144,9 @@ def print_pokemon_by_type_and_type2(type1, type2, dataframe):
     # & = and, | = or.
     print(dataframe[(dataframe['Type 1'] == type1) & (dataframe['Type 2'] == type2)])
 # print_pokemon_by_type_and_type2('Grass', 'Flying', poke_df)
+
+# print pokemon with a HP greater than 100 sorted by HP.
+def print_pokemon_by_hp_greater_than_100(dataframe):
+    print(dataframe[dataframe['HP'] > 100].sort_values('HP', ascending=False))
+# print_pokemon_by_hp_greater_than_100(poke_df)
+
