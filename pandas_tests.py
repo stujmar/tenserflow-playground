@@ -197,6 +197,11 @@ def print_pokemon_by_name(dataframe, name):
 # return original dataframe.
 def return_original_dataframe():
     return pd.read_csv('./data/pokemon_data.csv')
-# poke_df = return_original_dataframe()
+poke_df = return_original_dataframe()
+
+poke_df.loc[poke_df['Speed'] == 100, ['Generation', 'Legendary']] = "Wow Speedy!"
+poke_df = return_original_dataframe()
+
 
 print(poke_df.head(10))
+
