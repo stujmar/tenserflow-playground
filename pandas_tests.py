@@ -166,3 +166,8 @@ def filter_pokemon_by_mega(dataframe):
 def filter_pokemon_by_type_regex(dataframe):
     return dataframe.loc[dataframe['Type 1'].str.contains('fire|grass', flags=re.I, regex=True)]
 # print(filter_pokemon_by_type_regex(poke_df))
+
+# Get all pokemon names that start with 'pi'.
+def get_pokemon_names_starting_with_pi(dataframe, string):
+    return dataframe.loc[dataframe['Name'].str.contains(string + '[a-z]*', flags=re.I, regex=True)]
+# print(get_pokemon_names_starting_with_pi(poke_df, 'pi'))
