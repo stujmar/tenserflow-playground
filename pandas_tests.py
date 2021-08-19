@@ -153,5 +153,5 @@ def print_pokemon_by_hp_greater_than_100(dataframe):
 # reset the index of the dataframe.
 def reset_index(dataframe):
     # look up drop and inplace in the documentation.
-    dataframe.reset_index(drop=True, inplace=True)
-# reset_index(poke_df)
+    return dataframe.reset_index(drop=True, inplace=True)
+# poke_df = reset_index(poke_df)
