@@ -1,5 +1,6 @@
 # numpy is an important library for scientific computing.
 import numpy as np
+import re
 
 # matplotlib is a plotting library.
 import matplotlib.pyplot as plt
@@ -161,3 +162,7 @@ def filter_pokemon_by_mega(dataframe):
     return dataframe[dataframe['Name'].str.contains('Mega') == False]
 # poke_df = filter_pokemon_by_mega(poke_df)
 
+# Use regex to checks types
+def filter_pokemon_by_type_regex(dataframe):
+    return dataframe.loc[dataframe['Type 1'].str.contains('fire|grass', flags=re.I, regex=True)]
+# print(filter_pokemon_by_type_regex(poke_df))
