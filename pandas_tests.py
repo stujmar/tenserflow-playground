@@ -117,8 +117,7 @@ def rearrange_columns(dataframe):
     cols = list(dataframe.columns)
     # careful hard coding, this is not a good way to do this.
     return dataframe[cols[0:4] + [cols[-1]]+cols[4:12]]
-
-poke_df = rearrange_columns(poke_df)
+# poke_df = rearrange_columns(poke_df)
 
 # save the dataframe to a csv file.
 def save_dataframe_to_csv(dataframe, filename):
@@ -202,6 +201,8 @@ poke_df = return_original_dataframe()
 poke_df.loc[poke_df['Speed'] == 100, ['Generation', 'Legendary']] = "Wow Speedy!"
 poke_df = return_original_dataframe()
 
+add_stats()
+poke_df = rearrange_columns(poke_df)
+print(poke_df)
 
-print(poke_df.head(10))
-
+print(poke_df.groupby(['Type 1']).mean())
