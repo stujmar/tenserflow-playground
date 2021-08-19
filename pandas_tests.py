@@ -167,7 +167,12 @@ def filter_pokemon_by_type_regex(dataframe):
     return dataframe.loc[dataframe['Type 1'].str.contains('fire|grass', flags=re.I, regex=True)]
 # print(filter_pokemon_by_type_regex(poke_df))
 
-# Get all pokemon names that start with 'pi'.
-def get_pokemon_names_starting_with_pi(dataframe, string):
+# Get all pokemon names that contains with 'pi'.
+def get_pokemon_name_contains(dataframe, string):
     return dataframe.loc[dataframe['Name'].str.contains(string + '[a-z]*', flags=re.I, regex=True)]
-# print(get_pokemon_names_starting_with_pi(poke_df, 'pi'))
+# print(get_pokemon_name_contains(poke_df, 'pi'))
+
+# Get all pokemon names that starts with 'pi'.
+def get_pokemon_names_starting_with(dataframe, string):
+    return dataframe.loc[dataframe['Name'].str.contains('^' + string + '[a-z]*', flags=re.I, regex=True)]
+print(get_pokemon_names_starting_with(poke_df, 'pi'))
