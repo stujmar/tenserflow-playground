@@ -187,9 +187,16 @@ def find_and_replace(dataframe, old, new):
 def find_and_replace(dataframe, name):
     dataframe.loc[dataframe['Name'] == name, 'Legendary'] = True
     return dataframe
-find_and_replace(poke_df, 'Magikarp')
+# find_and_replace(poke_df, 'Magikarp')
 
 # print all pokemon where Name = 'Magicarp'
 def print_pokemon_by_name(dataframe, name):
     print(dataframe[dataframe['Name'] == name])
-print_pokemon_by_name(poke_df, 'Magikarp')
+# print_pokemon_by_name(poke_df, 'Magikarp')
+
+# return original dataframe.
+def return_original_dataframe():
+    return pd.read_csv('./data/pokemon_data.csv')
+# poke_df = return_original_dataframe()
+
+print(poke_df.head(10))
