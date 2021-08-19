@@ -182,3 +182,14 @@ def find_and_replace(dataframe, old, new):
     dataframe.loc[dataframe['Type 1'] == old, 'Type 1'] = new
     return dataframe
 # print(find_and_replace(poke_df, 'Fire', 'Lava'))
+
+# Make pokemon of a given name Legendary. 
+def find_and_replace(dataframe, name):
+    dataframe.loc[dataframe['Name'] == name, 'Legendary'] = True
+    return dataframe
+find_and_replace(poke_df, 'Magikarp')
+
+# print all pokemon where Name = 'Magicarp'
+def print_pokemon_by_name(dataframe, name):
+    print(dataframe[dataframe['Name'] == name])
+print_pokemon_by_name(poke_df, 'Magikarp')
