@@ -155,3 +155,9 @@ def reset_index(dataframe):
     # look up drop and inplace in the documentation.
     return dataframe.reset_index(drop=True, inplace=True)
 # poke_df = reset_index(poke_df)
+
+# Filter out pokemon with 'Mega' in their name.
+def filter_pokemon_by_mega(dataframe):
+    return dataframe[dataframe['Name'].str.contains('Mega') == False]
+# poke_df = filter_pokemon_by_mega(poke_df)
+
