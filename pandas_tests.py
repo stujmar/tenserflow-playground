@@ -175,4 +175,10 @@ def get_pokemon_name_contains(dataframe, string):
 # Get all pokemon names that starts with 'pi'.
 def get_pokemon_names_starting_with(dataframe, string):
     return dataframe.loc[dataframe['Name'].str.contains('^' + string + '[a-z]*', flags=re.I, regex=True)]
-print(get_pokemon_names_starting_with(poke_df, 'pi'))
+# print(get_pokemon_names_starting_with(poke_df, 'pi'))
+
+# Find and replace types. 
+def find_and_replace(dataframe, old, new):
+    dataframe.loc[dataframe['Type 1'] == old, 'Type 1'] = new
+    return dataframe
+# print(find_and_replace(poke_df, 'Fire', 'Lava'))
