@@ -2,11 +2,18 @@
 import numpy as np
 import re
 
+
 # matplotlib is a plotting library.
 import matplotlib.pyplot as plt
 
 # pandas is a library for data manipulation and analysis.
 import pandas as pd
+
+# Set print parameters to not truncate.
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', None)
+pd.set_option('display.max_colwidth', -1)
 
 # Load dataset.
 dftrain = pd.read_csv('https://storage.googleapis.com/tf-datasets/titanic/train.csv') # training data
@@ -209,5 +216,13 @@ poke_df = rearrange_columns(poke_df)
 
 # print the count of pokemon of each type.
 def print_pokemon_count_by_type(dataframe):
-    print(dataframe.groupby(['Type 1']).count())
-print_pokemon_count_by_type(poke_df)  
+    dataframe['count'] = 1
+    print(dataframe.groupby(['Type 1']).count()['count'])
+# print_pokemon_count_by_type(poke_df)  
+
+# print the count of pokemon of each type 1 and 2.
+def print_pokemon_count_by_types(dataframe):
+    dataframe['count'] = 1
+    print(dataframe.groupby(['Type 1', 'Type 2']).count()['count'])
+print_pokemon_count_by_types(poke_df)  
+
