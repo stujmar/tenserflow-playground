@@ -203,6 +203,11 @@ poke_df = return_original_dataframe()
 
 add_stats()
 poke_df = rearrange_columns(poke_df)
-print(poke_df)
+# print(poke_df)
 
-print(poke_df.groupby(['Type 1']).mean())
+# print(poke_df.groupby(['Type 1']).mean().sort_values('Total', ascending=False))
+
+# print the count of pokemon of each type.
+def print_pokemon_count_by_type(dataframe):
+    print(dataframe.groupby(['Type 1']).count())
+print_pokemon_count_by_type(poke_df)  
