@@ -226,3 +226,11 @@ def print_pokemon_count_by_types(dataframe):
     print(dataframe.groupby(['Type 1', 'Type 2']).count()['count'])
 print_pokemon_count_by_types(poke_df)  
 
+# group_by() count() and sum() great for working with giant datasets too big to view in one dataframe.
+
+# A method to prin the poke data in chunks, very cool!
+def print_pokemon_chunks(chunk_size):
+    for index, poke_chunk in pd.read_csv('./data/pokemon_data.csv', chunksize=chunk_size):
+        print("CHUNK", index)
+        print(poke_chunk)
+# print_pokemon_chunks(10)
