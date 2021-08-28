@@ -20,18 +20,21 @@ one_dimensional_array = np.array([1, 2, 3, 4]) # one dimensional array.
 def print_one_dimensional_array():
     print(one_dimensional_array)
     print("dimension(s):", one_dimensional_array.ndim)
+    print("shape:", one_dimensional_array.shape)
 print_one_dimensional_array()
 
 two_dimensional_array = np.array([[1, 2, 3], [4, 5, 6]]) # two dimensional array.
 def print_two_dimensional_array():
     print(two_dimensional_array)
     print("dimension(s):", two_dimensional_array.ndim)
+    print("shape:", two_dimensional_array.shape)
 print_two_dimensional_array()
 
 three_dimensional_array = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]]) # three dimensional array.
 def print_three_dimensional_array():
     print(three_dimensional_array)
     print("dimension(s):", three_dimensional_array.ndim)
+    print("shape:", three_dimensional_array.shape)
 print_three_dimensional_array()
 
 
