@@ -16,3 +16,19 @@ import sys
 # Numpy can to additions deletions etc as can Python lists, but Numpy can do much more.
 # Mathlab Pandas and Scipy are other packages that use Numpy? double check this.
 
+one_dimensional_array = np.array([1, 2, 3, 4]) # one dimensional array.
+def print_one_dimensional_array():
+    print(one_dimensional_array)
+# print_one_dimensional_array()
+
+two_dimensional_array = np.array([[1, 2, 3], [4, 5, 6]]) # two dimensional array.
+def print_two_dimensional_array():
+    print(two_dimensional_array)
+# print_two_dimensional_array()
+
+three_dimensional_array = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]]) # three dimensional array.
+def print_three_dimensional_array():
+    print(three_dimensional_array)
+# print_three_dimensional_array()
+
+
