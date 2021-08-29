@@ -52,13 +52,27 @@ print(a.shape)
 # get a specific element/entry array[row, column]
 # prints the last element
 print(a[1, 6])
+# prints 14
 
 # print an element with negative index
 # prints the last element
 print(a[-1, -1])
+# prints 14
 
 # print a whole row
 print(a[0, :])
+# prints [1 2 3 4 5 6 7]
 
 # print a whole column
 print(a[:, 2])
+# print [3, 10]
+
+# Getting a little more advanced. [start:stop:step]
+print(a[0, 1:6:2])
+# prints [2, 4, 6]
+
+# made a function to change an element in the 2 dimensional array
+def change_element(array, row, column, new_value):
+    array[row, column] = new_value
+    print(array)
+# change_element(a, 0, 0, 99)
