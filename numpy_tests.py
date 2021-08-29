@@ -50,5 +50,15 @@ a = np.array([[1, 2, 3, 4, 5 ,6 ,7], [ 8, 9, 10, 11, 12, 13, 14]])
 print(a.shape)
 
 # get a specific element/entry array[row, column]
+# prints the last element
 print(a[1, 6])
 
+# print an element with negative index
+# prints the last element
+print(a[-1, -1])
+
+# print a whole row
+print(a[0, :])
+
+# print a whole column
+print(a[:, 2])
