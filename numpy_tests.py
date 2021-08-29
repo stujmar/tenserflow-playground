@@ -23,7 +23,7 @@ def print_one_dimensional_array():
     print("shape:", one_dimensional_array.shape)
     print("type:", one_dimensional_array.dtype)
     print("size:", one_dimensional_array.size)
-print_one_dimensional_array()
+# print_one_dimensional_array()
 
 two_dimensional_array = np.array([[1, 2, 3], [4, 5, 6]]) # two dimensional array.
 def print_two_dimensional_array():
@@ -31,7 +31,7 @@ def print_two_dimensional_array():
     print("dimension(s):", two_dimensional_array.ndim)
     print("type:", two_dimensional_array.dtype)
     print("size:", two_dimensional_array.size)
-print_two_dimensional_array()
+# print_two_dimensional_array()
 
 three_dimensional_array = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]]) # three dimensional array.
 def print_three_dimensional_array():
@@ -39,6 +39,16 @@ def print_three_dimensional_array():
     print("dimension(s):", three_dimensional_array.ndim)
     print("type:", three_dimensional_array.dtype)
     print("size:", three_dimensional_array.size)
-print_three_dimensional_array()
+# print_three_dimensional_array()
 
+# .itemsize x .size = .nbytes
+
+# establish a 2d array with a shape of (2, 7)
+a = np.array([[1, 2, 3, 4, 5 ,6 ,7], [ 8, 9, 10, 11, 12, 13, 14]])
+
+# check the shape
+print(a.shape)
+
+# get a specific element/entry array[row, column]
+print(a[1, 6])
 
