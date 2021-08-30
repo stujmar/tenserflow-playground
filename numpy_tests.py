@@ -76,3 +76,16 @@ def change_element(array, row, column, new_value):
     array[row, column] = new_value
     print(array)
 # change_element(a, 0, 0, 99)
+
+def change_column(array, column, new_value):
+    array[:, column] = new_value
+    print(array)
+# change_column(a, 1, 99)
+
+def change_row(array, row, new_value):
+    array[row, :] = new_value
+    print(array)
+# change_row(a, 0, 99)
+
+three_dee = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+print(three_dee)
