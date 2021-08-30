@@ -88,4 +88,6 @@ def change_row(array, row, new_value):
 # change_row(a, 0, 99)
 
 three_dee = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+
 print(three_dee)
+print(three_dee[0,1,1])
