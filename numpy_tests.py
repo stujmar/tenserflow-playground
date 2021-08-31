@@ -139,4 +139,13 @@ def print_repeat(x):
 arr_two = np.array([[1, 2, 3]])
 def print_repeat_2d(x):
     print(np.repeat(arr_two, x, axis=0))
-print_repeat_2d(3)
+# print_repeat_2d(3)
+
+# Code challenge
+our_array = np.zeros((5, 5))
+our_array[:, 0] = 1
+our_array[:, 4] = 1
+our_array[0, :] = 1
+our_array[4, :] = 1
+our_array[2, 2] = 9
+print(our_array)
