@@ -89,5 +89,10 @@ def change_row(array, row, new_value):
 
 three_dee = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
 
-print(three_dee)
-print(three_dee[0,1,1])
+# print(three_dee)
+# print(three_dee[0,1,1])
+
+# function to print an array of zeros.
+def print_zeros(x):
+    print(np.zeros(x))
+print_zeros(3)
