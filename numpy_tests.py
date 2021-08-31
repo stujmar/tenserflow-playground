@@ -119,3 +119,8 @@ four_array = np.full_like(a, 4)
 def print_random(x, y):
     print(np.random.random((x, y)))
 print_random(3, 2)
+
+# a function to print an array of random numbers, with a specific range.
+def print_random_range(max, value):
+    print(np.random.randint(max, size=(value, value)))
+print_random_range(10, 5)
