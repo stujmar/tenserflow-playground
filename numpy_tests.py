@@ -129,3 +129,9 @@ def print_random_range(max, value):
 def print_identity(x):
     print(np.identity(x))
 # print_identity(5)
+
+arr = np.array([1, 2, 3])
+# function to repeat an array x times.
+def print_repeat(x):
+    print(np.repeat(arr, x))
+print_repeat(3)
