@@ -118,9 +118,14 @@ four_array = np.full_like(a, 4)
 # a function to print an array of random numbers.
 def print_random(x, y):
     print(np.random.random((x, y)))
-print_random(3, 2)
+# print_random(3, 2)
 
 # a function to print an array of random numbers, with a specific range.
 def print_random_range(max, value):
     print(np.random.randint(max, size=(value, value)))
-print_random_range(10, 5)
+# print_random_range(10, 5)
+
+# print an identity matrix.
+def print_identity(x):
+    print(np.identity(x))
+# print_identity(5)
