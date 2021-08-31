@@ -110,4 +110,12 @@ def print_ones(x, y, z):
 # function to print a 2d array of n number.
 def print_n(x, y, n):
     print(np.full((x, y), n, dtype='int32'))
-print_n(3, 2, 99)
+# print_n(3, 2, 99)
+
+four_array = np.full_like(a, 4)
+# print(four_array)
+
+# a function to print an array of random numbers.
+def print_random(x, y):
+    print(np.random.random((x, y)))
+print_random(3, 2)
