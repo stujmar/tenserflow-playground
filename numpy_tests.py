@@ -106,3 +106,8 @@ def print_zeros_2d(x, y):
 def print_ones(x, y, z):
     print(np.ones((x, y, z), dtype='int32'))
 # print_ones(3, 2, 1)
+
+# function to print a 2d array of n number.
+def print_n(x, y, n):
+    print(np.full((x, y), n, dtype='int32'))
+print_n(3, 2, 99)
