@@ -102,3 +102,7 @@ def print_zeros_2d(x, y):
     print(np.zeros((x, y)))
 # print_zeros_2d(2, 3)
 
+# function to print a three dimensional array of ones.
+def print_ones(x, y, z):
+    print(np.ones((x, y, z), dtype='int32'))
+# print_ones(3, 2, 1)
