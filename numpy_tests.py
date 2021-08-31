@@ -95,4 +95,10 @@ three_dee = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
 # function to print an array of zeros.
 def print_zeros(x):
     print(np.zeros(x))
-print_zeros(3)
+# print_zeros(3)
+
+# function to print a two dimensional array of zeroes.
+def print_zeros_2d(x, y):
+    print(np.zeros((x, y)))
+# print_zeros_2d(2, 3)
+
