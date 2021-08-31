@@ -134,4 +134,9 @@ arr = np.array([1, 2, 3])
 # function to repeat an array x times.
 def print_repeat(x):
     print(np.repeat(arr, x))
-print_repeat(3)
+# print_repeat(3)
+
+arr_two = np.array([[1, 2, 3]])
+def print_repeat_2d(x):
+    print(np.repeat(arr_two, x, axis=0))
+print_repeat_2d(3)
