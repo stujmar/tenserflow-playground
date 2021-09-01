@@ -154,5 +154,5 @@ print(our_array)
 output = np.ones((5, 5))
 core = np.zeros((3, 3))
 core[1, 1] = 9
+output[1:-1, 1:-1] = core
 print(output)
-print(core)
