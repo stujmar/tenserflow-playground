@@ -161,6 +161,10 @@ a = np.array([1, 2, 3, 4, 5])
 b = a
 b[0] = 99
 print(b)
-
 # a is a reference to the same array as b!
 print(a)
+
+c = np.array([1, 2, 3, 4, 5])
+d = c.copy()
+d[0] = 99
+print(c, d)
