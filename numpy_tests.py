@@ -176,3 +176,11 @@ def adding_to_array(array, n):
     array += n
     print(array)
 # adding_to_array(e, 10)
+
+# a function to add two arrays. 
+def add_two_arrays(array1, array2):
+    array1 += array2
+    print(array1)
+f = np.array([1, 2, 3, 4, 5])
+g = np.array([5, 4, 3, 2, 1])
+# add_two_arrays(f, g)
