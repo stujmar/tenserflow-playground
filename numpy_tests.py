@@ -149,3 +149,7 @@ our_array[0, :] = 1
 our_array[4, :] = 1
 our_array[2, 2] = 9
 print(our_array)
+
+# Suggested solution.
+output = np.ones((5, 5))
+print(output)
