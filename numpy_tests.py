@@ -197,4 +197,15 @@ print(np.matmul(h, i))
 # min, max, mean, median, mode, variance, standard deviation, and more.
 
 stats = np.array([[1, 2, 3,], [4, 5, 6]])
-print(stats)
+
+# max dimension
+print(np.max(stats, axis=0))
+# => [4 5 6]
+
+# max value of each row?
+print(np.max(stats, axis=1))
+# => [3 6]
+
+my_name = "Stu"
+print(my_name)
+# => Stu
