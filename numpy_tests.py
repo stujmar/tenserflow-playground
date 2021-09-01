@@ -152,4 +152,6 @@ print(our_array)
 
 # Suggested solution.
 output = np.ones((5, 5))
+core = np.zeros((3, 3))
 print(output)
+print(core)
