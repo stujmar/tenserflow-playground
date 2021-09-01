@@ -160,11 +160,19 @@ output[1:-1, 1:-1] = core
 a = np.array([1, 2, 3, 4, 5])
 b = a
 b[0] = 99
-print(b)
 # a is a reference to the same array as b!
-print(a)
+# print(a, b)
 
 c = np.array([1, 2, 3, 4, 5])
 d = c.copy()
 d[0] = 99
-print(c, d)
+# now there is an actual copy of the array.
+# print(c, d)
+
+
+e = np.array([1, 2, 3, 4, 5])
+# a function to add to an array.
+def adding_to_array(array, n):
+    array += n
+    print(array)
+# adding_to_array(e, 10)
