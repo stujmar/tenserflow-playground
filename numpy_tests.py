@@ -148,11 +148,16 @@ our_array[:, 4] = 1
 our_array[0, :] = 1
 our_array[4, :] = 1
 our_array[2, 2] = 9
-print(our_array)
+# print(our_array)
 
 # Suggested solution.
 output = np.ones((5, 5))
 core = np.zeros((3, 3))
 core[1, 1] = 9
 output[1:-1, 1:-1] = core
-print(output)
+# print(output)
+
+a = np.array([1, 2, 3, 4, 5])
+b = a
+b[0] = 99
+print(b)
