@@ -184,3 +184,12 @@ def add_two_arrays(array1, array2):
 f = np.array([1, 2, 3, 4, 5])
 g = np.array([5, 4, 3, 2, 1])
 # add_two_arrays(f, g)
+
+# Linear Algebra
+# matrix multiplication?
+h = np.ones((2, 3))
+i = np.full((3,2), 2)
+# I don't understand this.
+print(np.matmul(h, i))
+
+# Look up determinant.
