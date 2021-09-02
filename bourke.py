@@ -11,3 +11,11 @@
 # Example with a self driving car all the rules would be too much to type.
 # If you can build a simple rule based system don't use ML.
 # Google's ML guide https://developers.google.com/machine-learning/guides
+
+# Lots of data and room for error, then ML is good for you.
+
+# ML likes structured data. Columns = Features.
+common_ml_algorithms = ["random forest", "naive bayes", "nearest neighbour", "support vector machine", "many more"]
+shallow_algorithms = common_ml_algorithms
+common_dl_algorithms = ["neural networks", "fully connected neural network", "convolution nn", "recurrent nn", "transformer"]
+# DL works well on unstructured data, loose text, video, audio.
