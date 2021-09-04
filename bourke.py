@@ -32,3 +32,8 @@ inputs = np.array([[116, 78, 15], [117, 43, 96], [125, 87, 23]])
 # 1 inputs
 # 2 something in the middle.
 # 3 outputs
+
+# Types of Learning
+# 1 Supervised Learning
+# 2 Semi-supervised Learning
+# 3 Tranfer Learning
