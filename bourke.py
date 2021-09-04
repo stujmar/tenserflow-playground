@@ -1,3 +1,5 @@
+import numpy as np
+
 # Starting a TensorFlow Tutorial from
 # https://www.youtube.com/watch?v=tpCFfeUEGs8
 
@@ -19,3 +21,14 @@ common_ml_algorithms = ["random forest", "naive bayes", "nearest neighbour", "su
 shallow_algorithms = common_ml_algorithms
 common_dl_algorithms = ["neural networks", "fully connected neural network", "convolution nn", "recurrent nn", "transformer"]
 # DL works well on unstructured data, loose text, video, audio.
+
+# What are Neural Networks.
+
+# Numerical encoding aka a tensor.
+ 
+inputs = np.array([[116, 78, 15], [117, 43, 96], [125, 87, 23]])
+
+# Anatomy of a Neural Network.
+# 1 inputs
+# 2 something in the middle.
+# 3 outputs
