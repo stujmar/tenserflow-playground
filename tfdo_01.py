@@ -5,3 +5,6 @@
 # 3. And, finally, evalute the accuracy of the model.
 
 import tensorflow as tf
+
+# what is Keras?
+mnist = tf.keras.datasets.mnist
