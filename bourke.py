@@ -37,3 +37,6 @@ inputs = np.array([[116, 78, 15], [117, 43, 96], [125, 87, 23]])
 # 1 Supervised Learning
 # 2 Semi-supervised Learning
 # 3 Tranfer Learning
+
+# sequence to sequence or seq2seq
+# give https://www.tensorflow.org/ a read through.
