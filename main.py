@@ -4,9 +4,16 @@ import cProfile
 
 print(__name__)
 
-print(tf.version)
-tf.executing_eagerly()
-print('tesnorflow executed')
+# Print version of tensor.
+def print_tensor_version():
+    print(tf.version)
+# print_tensor_version
+
+# Checks whether the current thread has eager execution enabled.
+# This reduces features and boiler plate to make it easy to get started and debug OTF
+def check_if_eager():
+    tf.executing_eagerly()
+# check_if_eager()
 
 # Creating Tensors (Rank 0)
 string = tf.Variable("this is a string", tf.string)
