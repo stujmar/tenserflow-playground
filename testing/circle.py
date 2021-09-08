@@ -6,3 +6,6 @@ def circle_area(r):
 # Function check
 # print(circle_area(2))
 # Good check
+
+radii = [2, 0, -3, 2 + 5j, True, "string"]
+
