@@ -2,6 +2,8 @@ import os
 import tensorflow as tf
 import cProfile
 
+print(__name__)
+
 print(tf.version)
 tf.executing_eagerly()
 print('tesnorflow executed')
